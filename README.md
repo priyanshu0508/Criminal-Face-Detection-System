@@ -111,10 +111,3 @@ View all registered criminals or remove a record:
 java -jar target/cfds-1.0-SNAPSHOT-jar-with-dependencies.jar list
 java -jar target/cfds-1.0-SNAPSHOT-jar-with-dependencies.jar delete --id "C01"
 ```
-
----
-
-## ⚖️ License & Ethics
-This software is provided for **educational and research purposes only**. Biometric surveillance is a sensitive technology and must be deployed according to local laws and ethical guidelines regarding privacy and data collection.
-
-**Developed with ❤️ for high-performance Java engineering.**
