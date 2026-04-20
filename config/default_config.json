@@ -1,0 +1,38 @@
+{
+  "system": {
+    "version": "1.0.0",
+    "log_level": "INFO",
+    "log_dir": "logs/"
+  },
+  "detection": {
+    "model_path": "assets/models/face_detection_yunet_2023mar.onnx",
+    "confidence_threshold": 0.8,
+    "nms_threshold": 0.3,
+    "input_size": [320, 320]
+  },
+  "recognition": {
+    "model_path": "assets/models/face_recognition_sface_2021dec.onnx",
+    "cosine_threshold": 0.363,
+    "l2_threshold": 1.128
+  },
+  "database": {
+    "path": "data/cfds.db",
+    "wal_mode": true
+  },
+  "pipeline": {
+    "capture_threads": 1,
+    "processing_threads": 1,
+    "ring_buffer_size": 8
+  },
+  "alert": {
+    "cooldown_seconds": 5,
+    "log_path": "logs/alerts.jsonl",
+    "visual_banner": true
+  },
+  "display": {
+    "show_fps": true,
+    "show_landmarks": false,
+    "show_confidence": true,
+    "window_title": "CFDS - Criminal Face Detection System"
+  }
+}

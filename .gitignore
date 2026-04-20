@@ -1,0 +1,34 @@
+# --- Java & Maven ---
+target/
+.m2_repo/
+.maven/
+temp/
+.javacpp_cache/
+settings.xml
+
+# --- Database & Logs ---
+logs/
+data/*.db
+data/*.db-wal
+data/*.db-shm
+*.log
+alerts.jsonl
+
+# --- Models (Large Binaries) ---
+assets/models/*.onnx
+
+# --- IDE & OS ---
+.vs/
+.vscode/
+.idea/
+*.sln
+*.vcxproj*
+.DS_Store
+Thumbs.db
+
+# --- Miscellaneous ---
+*.o
+*.obj
+*.dll
+*.exe
+*.zip
